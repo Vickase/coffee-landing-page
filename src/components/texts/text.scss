@@ -9,6 +9,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  &.medium-size-container {
+    width: 37%;
+    padding: 10px;
+  }
+  &.small-size-container{
+    padding:100px;
+    text-align: left;
+
+  }
 
   .header {
     width: 100%;
@@ -17,17 +26,32 @@
     padding: 20px;
     align-items: center;
     &.black {
-      color: black;
+      color: #212529;
+    }
+    &.align-left{
+      text-align: left;
+    }
+    &.white{
+      color:white;
+      padding:0;
     }
     .title {
       font-weight: 700;
       margin-bottom: 10px;
       font-family: "Oswald", sans-serif;
-      &.big{
+      text-transform: uppercase;
+      line-height: 40px;
+      &.big {
         font-size: 56px;
       }
-      &.small{
+      &.medium {
         font-size: 30px;
+        margin-top: 0;
+      }
+      &.small{
+        font-size: 20px;
+       
+
       }
     }
   }
@@ -35,10 +59,26 @@
     font-size: 14px;
     margin: 0;
     font-family: "Nunito Sans", sans-serif;
+    &.gray {
+      font-size: 10px;
+      color: #767676;
+      line-height: 23px;
+    }
+    
+    &.white-p{
+      font-size: 10px;
+      color:white;
+      line-height: 23px;
+      text-align: center;
+      margin: 0 10px;
+      padding: 0 20px;
+    }
+   
   }
   .link {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
+    text-decoration: none;
 
     .link-p {
       color: #212529;
